@@ -191,13 +191,10 @@ The home page features a modern dark theme with an orange/red accent color (`#bd
 
 ### Additional Screenshots
 
-![Home Page](screenshots/home-page.png)
-*Professional background and expertise section*
-
 ![About Page](screenshots/about-page.png)
 *Professional background and expertise section*
 
-![Projects Showcase](screenshots/projects-page.png)
+![Projects Showcase](screenshots/project-page.png)
 *Portfolio of completed projects with detailed descriptions*
 
 ![Contact Page](screenshots/contact-page.png)
@@ -205,9 +202,7 @@ The home page features a modern dark theme with an orange/red accent color (`#bd
 
 ### Live Demo
 
-> **Live Demo:** [Add your deployed URL here]
-> 
-> **Note:** Replace this placeholder with your actual deployment URL once the portfolio is live.
+<!-- > **Live Demo:** [Add your deployed URL here] -->
 
 ### Sections Overview
 
