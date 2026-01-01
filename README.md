@@ -191,6 +191,9 @@ The home page features a modern dark theme with an orange/red accent color (`#bd
 
 ### Additional Screenshots
 
+![Home Page](screenshots/home-page.png)
+*Professional background and expertise section*
+
 ![About Page](screenshots/about-page.png)
 *Professional background and expertise section*
 
