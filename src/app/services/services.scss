@@ -16,13 +16,29 @@
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cardEntrance 250ms ease-out forwards;
+  will-change: transform, opacity;
+  transition: transform 250ms ease-out, opacity 250ms ease-out, box-shadow 250ms ease-out;
 }
 
+.service-card:nth-child(1) { animation-delay: 50ms; }
+.service-card:nth-child(2) { animation-delay: 100ms; }
+.service-card:nth-child(3) { animation-delay: 150ms; }
+.service-card:nth-child(4) { animation-delay: 200ms; }
+
 .service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: var(--accent-primary);
+}
+
+@keyframes cardEntrance {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .service-icon {

@@ -24,6 +24,29 @@
   padding: 2rem;
   border-radius: 12px;
   border: 1px solid var(--border-color);
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cardEntrance 250ms ease-out forwards;
+  will-change: transform, opacity;
+  transition: transform 250ms ease-out, opacity 250ms ease-out, box-shadow 250ms ease-out;
+}
+
+.skill-category:nth-child(1) { animation-delay: 50ms; }
+.skill-category:nth-child(2) { animation-delay: 100ms; }
+.skill-category:nth-child(3) { animation-delay: 150ms; }
+.skill-category:nth-child(4) { animation-delay: 200ms; }
+
+.skill-category:hover {
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-primary);
+}
+
+@keyframes cardEntrance {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .category-title {
@@ -108,12 +131,21 @@
   padding: 2rem;
   border-radius: 12px;
   border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cardEntrance 250ms ease-out forwards;
+  will-change: transform, opacity;
+  transition: transform 250ms ease-out, opacity 250ms ease-out, box-shadow 250ms ease-out;
 }
 
+.summary-item:nth-child(1) { animation-delay: 50ms; }
+.summary-item:nth-child(2) { animation-delay: 100ms; }
+.summary-item:nth-child(3) { animation-delay: 150ms; }
+.summary-item:nth-child(4) { animation-delay: 200ms; }
+
 .summary-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: var(--accent-primary);
 }
 

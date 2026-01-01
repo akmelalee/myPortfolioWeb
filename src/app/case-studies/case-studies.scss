@@ -13,12 +13,28 @@
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 2.5rem;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cardEntrance 250ms ease-out forwards;
+  will-change: transform, opacity;
+  transition: transform 250ms ease-out, opacity 250ms ease-out, box-shadow 250ms ease-out;
 }
 
+.case-study:nth-child(1) { animation-delay: 50ms; }
+.case-study:nth-child(2) { animation-delay: 100ms; }
+.case-study:nth-child(3) { animation-delay: 150ms; }
+
 .case-study:hover {
-  box-shadow: var(--shadow-lg);
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-color: var(--accent-primary);
+}
+
+@keyframes cardEntrance {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .case-title {
