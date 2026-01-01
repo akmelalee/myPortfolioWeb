@@ -178,7 +178,33 @@ myPortfolioWeb/
 
 ## Screenshots / Demo
 
-> **Note:** Add screenshots or a live demo link here once the portfolio is deployed.
+### Home Page
+
+![Portfolio Home Page](screenshots/home-page.png)
+
+The home page features a modern dark theme with an orange/red accent color (`#bd4520`), showcasing:
+
+- **Hero Section** with role badge, compelling headline, and key statistics
+- **Value Proposition Cards** highlighting production-ready code, performance optimization, security, and measurable results
+- **Trust Indicators** section with client testimonials and trust badges
+- **Responsive Navigation** with theme toggle and smooth scrolling
+
+### Additional Screenshots
+
+![About Page](screenshots/about-page.png)
+*Professional background and expertise section*
+
+![Projects Showcase](screenshots/projects-page.png)
+*Portfolio of completed projects with detailed descriptions*
+
+![Contact Page](screenshots/contact-page.png)
+*Contact form and social media links*
+
+### Live Demo
+
+> **Live Demo:** [Add your deployed URL here]
+> 
+> **Note:** Replace this placeholder with your actual deployment URL once the portfolio is live.
 
 ### Sections Overview
 
