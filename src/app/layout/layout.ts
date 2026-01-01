@@ -10,7 +10,7 @@ import { LogoComponent } from './logo.component';
   styleUrl: './layout.scss',
 })
 export class Layout implements OnInit, OnDestroy {
-  isDarkMode = signal(false);
+  isDarkMode = signal(true);
   isMobileMenuOpen = signal(false);
   showScrollTop = signal(false);
   currentYear = new Date().getFullYear();
