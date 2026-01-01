@@ -1,0 +1,52 @@
+<section class="skills section">
+  <div class="container">
+    <h2 class="section-title">Technical Expertise</h2>
+    <p class="section-subtitle">
+      A comprehensive skill set honed through 5+ years of building production applications
+    </p>
+
+    <div class="skills-grid">
+      @for (category of skillCategories; track category.title) {
+        <div class="skill-category">
+          <h3 class="category-title">{{ category.title }}</h3>
+          <div class="skills-list">
+            @for (skill of category.skills; track skill.name) {
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">{{ skill.name }}</span>
+                  <span class="skill-years">{{ skill.years }} years</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" [style.width.%]="skill.level"></div>
+                </div>
+                <div class="skill-level">{{ skill.level }}%</div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="skills-summary">
+      <h3>What This Means for Your Project</h3>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <h4>Enterprise-Ready</h4>
+          <p>Deep expertise in Angular and TypeScript means I can handle complex enterprise applications with confidence.</p>
+        </div>
+        <div class="summary-item">
+          <h4>Full-Stack Capability</h4>
+          <p>From frontend architecture to database optimization, I can own the entire stack.</p>
+        </div>
+        <div class="summary-item">
+          <h4>Mobile Expertise</h4>
+          <p>Ionic and Capacitor experience means I can build cross-platform mobile apps efficiently.</p>
+        </div>
+        <div class="summary-item">
+          <h4>Performance Focus</h4>
+          <p>Database optimization and query tuning experience ensures your app scales efficiently.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

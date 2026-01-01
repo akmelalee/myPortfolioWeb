@@ -1,0 +1,66 @@
+<section class="experience section">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-subtitle">
+      A timeline of growth, achievements, and measurable impact
+    </p>
+
+    <div class="timeline">
+      @for (exp of experiences; track exp.title) {
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">{{ exp.period }}</div>
+            <h3 class="timeline-title">{{ exp.title }}</h3>
+            <div class="timeline-company">{{ exp.company }} • {{ exp.location }}</div>
+            
+            <div class="timeline-achievements">
+              <h4 class="achievements-title">Key Achievements:</h4>
+              <ul class="achievements-list">
+                @for (achievement of exp.achievements; track achievement) {
+                  <li class="achievement-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>{{ achievement }}</span>
+                  </li>
+                }
+              </ul>
+            </div>
+
+            <div class="timeline-technologies">
+              <h4 class="technologies-title">Technologies:</h4>
+              <div class="tech-badges">
+                @for (tech of exp.technologies; track tech) {
+                  <span class="tech-badge">{{ tech }}</span>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="experience-summary">
+      <h3>Career Highlights</h3>
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="summary-number">5+</div>
+          <div class="summary-label">Years Experience</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-number">20+</div>
+          <div class="summary-label">Projects Delivered</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-number">50K+</div>
+          <div class="summary-label">Users Served</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-number">65%</div>
+          <div class="summary-label">Avg Performance Improvement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

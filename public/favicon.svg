@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimal Code Brackets Monogram - High Contrast -->
+  <!-- Left Bracket -->
+  <path d="M9 6 L9 26 M9 6 Q7 6 7 8 L7 24 Q7 26 9 26" 
+        stroke="#0066cc" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  
+  <!-- Right Bracket -->
+  <path d="M23 6 L23 26 M23 6 Q25 6 25 8 L25 24 Q25 26 23 26" 
+        stroke="#0066cc" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+

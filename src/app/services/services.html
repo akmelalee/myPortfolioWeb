@@ -1,0 +1,52 @@
+<section class="services section">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">
+      Professional services tailored for startups, enterprises, and freelance clients
+    </p>
+
+    <div class="services-grid">
+      @for (service of services; track service.title) {
+        <div class="service-card">
+          <div class="service-icon">{{ service.icon }}</div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-description">{{ service.description }}</p>
+          
+          <div class="service-features">
+            <h4 class="features-title">What's Included:</h4>
+            <ul class="features-list">
+              @for (feature of service.features; track feature) {
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>{{ feature }}</span>
+                </li>
+              }
+            </ul>
+          </div>
+
+          <div class="service-deliverables">
+            <h4 class="deliverables-title">Deliverables:</h4>
+            <div class="deliverables-tags">
+              @for (deliverable of service.deliverables; track deliverable) {
+                <span class="deliverable-tag">{{ deliverable }}</span>
+              }
+            </div>
+          </div>
+
+          <a routerLink="/contact" class="service-cta">Get Started</a>
+        </div>
+      }
+    </div>
+
+    <div class="services-cta">
+      <h3>Ready to Work Together?</h3>
+      <p>Let's discuss how I can help bring your project to life with scalable, production-ready solutions.</p>
+      <div class="cta-buttons">
+        <a routerLink="/contact" class="btn btn-primary">Start a Project</a>
+        <a href="https://upwork.com" target="_blank" rel="noopener" class="btn btn-secondary">View on Upwork</a>
+      </div>
+    </div>
+  </div>
+</section>

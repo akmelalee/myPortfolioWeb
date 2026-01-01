@@ -1,0 +1,79 @@
+<header class="header">
+  <nav class="nav container">
+    <div class="nav-brand">
+      <a routerLink="/" class="brand-link">
+        <app-logo [size]="32" [isDark]="isDarkMode()"></app-logo>
+        <span class="brand-text">Portfolio</span>
+      </a>
+    </div>
+    
+    <ul class="nav-menu" [class.active]="isMobileMenuOpen()">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="scrollToTop()">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="scrollToTop()">About</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active" (click)="scrollToTop()">Skills</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" (click)="scrollToTop()">Projects</a></li>
+      <li><a routerLink="/case-studies" routerLinkActive="active" (click)="scrollToTop()">Case Studies</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active" (click)="scrollToTop()">Experience</a></li>
+      <li><a routerLink="/services" routerLinkActive="active" (click)="scrollToTop()">Services</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" (click)="toggleTheme()" aria-label="Toggle theme">
+        @if (isDarkMode()) {
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        } @else {
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        }
+      </button>
+      
+      <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" aria-label="Toggle menu">
+        <span [class.active]="isMobileMenuOpen()"></span>
+        <span [class.active]="isMobileMenuOpen()"></span>
+        <span [class.active]="isMobileMenuOpen()"></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; {{ currentYear }} Senior Software Engineer Portfolio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://upwork.com" target="_blank" rel="noopener">Upwork</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+@if (showScrollTop()) {
+  <button 
+    class="scroll-to-top" 
+    (click)="scrollToTopFromButton()"
+    aria-label="Scroll to top"
+    title="Scroll to top"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+}
