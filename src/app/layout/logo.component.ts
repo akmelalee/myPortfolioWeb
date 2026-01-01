@@ -18,13 +18,13 @@ import { CommonModule } from '@angular/common';
     >
       <!-- Geometric Architecture Frame -->
       <rect x="6" y="6" width="28" height="28" rx="3" 
-            [attr.stroke]="isDark ? 'rgba(88, 166, 255, 0.15)' : 'rgba(0, 102, 204, 0.1)'" 
+            [attr.stroke]="isDark ? 'rgba(189, 69, 32, 0.15)' : 'rgba(189, 69, 32, 0.1)'" 
             stroke-width="1" 
             fill="none"/>
       
       <!-- Code Brackets - Left -->
       <path d="M14 10 L14 30 M14 10 Q12 10 12 12 L12 28 Q12 30 14 30" 
-            [attr.stroke]="isDark ? '#58a6ff' : '#0066cc'" 
+            [attr.stroke]="'#bd4520'" 
             stroke-width="2.5" 
             fill="none"
             stroke-linecap="round"
@@ -32,7 +32,7 @@ import { CommonModule } from '@angular/common';
       
       <!-- Code Brackets - Right -->
       <path d="M26 10 L26 30 M26 10 Q28 10 28 12 L28 28 Q28 30 26 30" 
-            [attr.stroke]="isDark ? '#58a6ff' : '#0066cc'" 
+            [attr.stroke]="'#bd4520'" 
             stroke-width="2.5" 
             fill="none"
             stroke-linecap="round"
@@ -40,29 +40,29 @@ import { CommonModule } from '@angular/common';
       
       <!-- Architectural Module Lines -->
       <line x1="17" y1="15" x2="23" y2="15" 
-            [attr.stroke]="isDark ? 'rgba(88, 166, 255, 0.5)' : 'rgba(0, 102, 204, 0.4)'" 
+            [attr.stroke]="isDark ? 'rgba(189, 69, 32, 0.5)' : 'rgba(189, 69, 32, 0.4)'" 
             stroke-width="1.5" 
             stroke-linecap="round"/>
       <line x1="17" y1="20" x2="23" y2="20" 
-            [attr.stroke]="isDark ? 'rgba(88, 166, 255, 0.5)' : 'rgba(0, 102, 204, 0.4)'" 
+            [attr.stroke]="isDark ? 'rgba(189, 69, 32, 0.5)' : 'rgba(189, 69, 32, 0.4)'" 
             stroke-width="1.5" 
             stroke-linecap="round"/>
       <line x1="17" y1="25" x2="23" y2="25" 
-            [attr.stroke]="isDark ? 'rgba(88, 166, 255, 0.5)' : 'rgba(0, 102, 204, 0.4)'" 
+            [attr.stroke]="isDark ? 'rgba(189, 69, 32, 0.5)' : 'rgba(189, 69, 32, 0.4)'" 
             stroke-width="1.5" 
             stroke-linecap="round"/>
       
       <!-- Subtle Circuit Nodes -->
       <circle cx="16" cy="17.5" r="1" 
-              [attr.fill]="isDark ? '#58a6ff' : '#0066cc'" 
+              [attr.fill]="'#bd4520'" 
               opacity="0.7"/>
       <circle cx="24" cy="22.5" r="1" 
-              [attr.fill]="isDark ? '#58a6ff' : '#0066cc'" 
+              [attr.fill]="'#bd4520'" 
               opacity="0.7"/>
       
       <!-- Connection Line -->
       <line x1="16" y1="17.5" x2="24" y2="22.5" 
-            [attr.stroke]="isDark ? 'rgba(88, 166, 255, 0.3)' : 'rgba(0, 102, 204, 0.25)'" 
+            [attr.stroke]="isDark ? 'rgba(189, 69, 32, 0.3)' : 'rgba(189, 69, 32, 0.25)'" 
             stroke-width="1" 
             stroke-dasharray="2,2"
             stroke-linecap="round"/>
