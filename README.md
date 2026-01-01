@@ -200,7 +200,7 @@ The home page features a modern dark theme with an orange/red accent color (`#bd
 ![Contact Page](screenshots/contact-page.png)
 *Contact form and social media links*
 
-### Live Demo
+<!-- ### Live Demo -->
 
 <!-- > **Live Demo:** [Add your deployed URL here] -->
 
